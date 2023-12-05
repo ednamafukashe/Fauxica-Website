@@ -1,0 +1,140 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: "Poppins";
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin: 4em;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active:before{
+position: absolute;
+content: "";
+width: 35%;
+height: 1px;
+border-bottom: 2px solid black;
+bottom: -6px;
+}
+main{
+    display: flex;
+    gap:8em;
+    margin-top: 6em;
+   
+}
+
+.left-col {
+width: 45%;
+}
+
+h1{
+    font-size: 5.2rem;
+    font-family: Playfair Display;
+    margin: 0;
+}
+
+.subhead{
+    font-size: 1.8rem;
+}
+
+.right-col{
+    flex-grow: 1;
+}
+
+.CTA{
+    display: flex;
+    gap:2em;
+    margin: 5em 0;
+}
+
+.primary-btn{
+   
+    padding: 2rem;
+    background-color: #F2F0DF;
+    border-radius: 0.8em;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:black;
+    padding: 1em 2em;
+}
+
+.secondary-btn{
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    text-decoration: none;
+    padding: 1em 0;
+    gap:0.5em 
+}
+
+.secondary-btn svg{
+    width: 20px;
+}
+
+.news{
+display: flex;
+border: 1px solid black;
+border-radius: 0.8em;
+display: flex;
+gap:3em;
+align-items: center;
+padding: 1em 3em;
+position: relative;
+}
+
+.news:before{
+    content:"";
+    position: absolute;
+    background: url('../images/confetti.svg');
+    width: 100px;
+    height: 100px;
+    top:-20px;
+    left: -20px;
+    z-index: -2;
+
+}
+
+.employees{
+font-size: 3.3rem;
+font-weight: lighter;
+margin: 0;
+}
+
+.details{
+    font-size: 1.4rem;
+}
+.right-col{
+    display: grid;
+    gap: 2.3em;
+
+}
+.card{
+    background-color: blue;
+}
+
